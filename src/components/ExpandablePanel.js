@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { GoChevronDown, GoChevronLeft } from "react-icons/go";
+import { useState } from 'react';
+import { GoChevronDown, GoChevronLeft } from 'react-icons/go';
 
 function ExpandablePanel({ header, children }) {
   const [expanded, setExpanded] = useState(false);
@@ -18,9 +18,7 @@ function ExpandablePanel({ header, children }) {
           {expanded ? <GoChevronDown /> : <GoChevronLeft />}
         </div>
       </div>
-      {expanded && (
-        <div className="p-2 border-t cursor-pointer">{children}</div>
-      )}
+      {expanded && <div className="p-2 border-t">{children}</div>}
     </div>
   );
 }

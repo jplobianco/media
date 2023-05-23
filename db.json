@@ -18,6 +18,21 @@
       "id": 10,
       "title": "Hiking Trip",
       "userId": 1
+    },
+    {
+      "userId": 1,
+      "title": "Bespoke Steel Towels",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Elegant Steel Mouse",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "Generic Rubber Hat",
+      "id": 13
     }
   ],
   "photos": []

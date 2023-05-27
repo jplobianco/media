@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:3000"
+    x-develop:
+      watch:
+        - action: rebuild
+          path: package.json
+        - action: sync
+          path: .
+          target: /usr/src/app
+          ignore:
+            - node_modules/
+    command: npm start
+    depends_on:
+      - backend
+
+  backend:
+    build: .
+    ports:
+      - "3005:3005"
+    command: npm run start:server
